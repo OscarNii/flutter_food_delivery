@@ -29,7 +29,6 @@ class Page1 extends StatelessWidget {
             ),
           ),
         ),
-        Scaffold()
       ],
     );
   }
