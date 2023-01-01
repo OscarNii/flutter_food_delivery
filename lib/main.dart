@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
@@ -8,8 +6,6 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  /// This is an example app which make use of
-  /// `SignInButtonBuilder` and `SignInButton` class
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
