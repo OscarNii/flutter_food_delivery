@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
-import 'package:flutter_food_delivery/pages/homepage.dart';
+import 'package:flutter_food_delivery/homepage.dart';
 import 'package:flutter_food_delivery/pages/page1.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -26,18 +26,19 @@ class Signup extends StatelessWidget {
                     color: Color.fromARGB(255, 174, 244, 54),
                     borderRadius: BorderRadius.circular(25),
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 15, top: 3),
-                    child: Row(
-                      children: [
-                        Text(
-                          'skip',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                              color: Colors.black),
-                        ),
-                      ],
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: ((context) => Homepage1())));
+                    },
+                    child: Text(
+                      'skip',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          color: Colors.black),
                     ),
                   ),
                 ),
