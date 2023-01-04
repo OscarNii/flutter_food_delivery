@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 // ignore_for_file: prefer_const_construc
 
