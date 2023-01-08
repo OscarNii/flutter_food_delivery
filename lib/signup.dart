@@ -1,10 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, avoid_unnecessary_containers
 
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_food_delivery/pages/allsign.dart';
-import 'package:flutter_food_delivery/pages/homepage.dart';
 import 'package:flutter_food_delivery/pages/page1.dart';
 import 'package:google_fonts/google_fonts.dart';
 

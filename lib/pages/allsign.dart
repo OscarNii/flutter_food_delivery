@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
@@ -44,20 +44,29 @@ class SignInPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             SignInButtonBuilder(
+              highlightColor: Colors.red,
               text: 'Get going with Email',
               icon: Icons.email,
               onPressed: () {
                 _showButtonPressDialog(context, 'Email');
               },
-              backgroundColor: Colors.blueGrey[700]!,
+              backgroundColor: const Color.fromARGB(255, 154, 235, 56),
               width: 220.0,
             ),
             const Divider(),
-            SignInButton(
-              Buttons.GoogleDark,
-              onPressed: () {
-                _showButtonPressDialog(context, 'Google (dark)');
-              },
+            Container(
+              child: SignInButton(
+                Buttons.GoogleDark,
+                onPressed: () {
+                  _showButtonPressDialog(context, 'Google (dark)');
+                },
+              ),
+              width: 380,
+              margin: EdgeInsets.all(7),
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Color.fromARGB(255, 41, 106, 217)),
             ),
             const Divider(),
             SignInButton(
