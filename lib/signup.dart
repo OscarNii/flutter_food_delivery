@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_food_delivery/pages/allsign.dart';
-import 'package:flutter_food_delivery/pages/homepage.dart';
 import 'package:flutter_food_delivery/pages/page1.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -20,11 +19,11 @@ class Signup extends StatelessWidget {
               children: [
                 Divider(),
                 Padding(
-                  padding: const EdgeInsets.only(top: 45.0),
+                  padding: const EdgeInsets.only(top: 100.0),
                   child: Text(
                     "Welcome",
                     style: GoogleFonts.acme(
-                        fontSize: 70,
+                        fontSize: 90,
                         color: Colors.white,
                         fontWeight: FontWeight.bold),
                   ),
@@ -33,7 +32,7 @@ class Signup extends StatelessWidget {
                 Text(
                   "Your favourite food delivered",
                   style: GoogleFonts.abel(
-                    fontSize: 30,
+                    fontSize: 25,
                     color: Colors.white,
                   ),
                 ),
@@ -41,7 +40,7 @@ class Signup extends StatelessWidget {
                 Text(
                   "fast at your door",
                   style: GoogleFonts.abel(
-                    fontSize: 30,
+                    fontSize: 25,
                     color: Colors.white,
                   ),
                 ),
