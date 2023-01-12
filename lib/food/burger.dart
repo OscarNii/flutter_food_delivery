@@ -8,9 +8,11 @@ class Burger extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: AppBar(
-        title: Center(child: Text("Burger")),
-      ),
-    );
+        appBar: AppBar(
+          title: Text("BURGER"),
+          backgroundColor: Color.fromARGB(255, 154, 235, 56),
+          foregroundColor: Colors.black,
+        ),
+        body: Container());
   }
 }
