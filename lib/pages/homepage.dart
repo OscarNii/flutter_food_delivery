@@ -204,14 +204,25 @@ class Homepage1 extends StatelessWidget {
           ),
           Divider(),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Icon(
+                Icons.motorcycle,
+                color: Color.fromARGB(255, 154, 235, 56),
+              ),
+              SizedBox(width: 10),
               Text(
                 "Free delivery",
                 style: TextStyle(
                   color: Colors.white,
                 ),
               ),
+              SizedBox(width: 50),
+              Icon(
+                Icons.timer,
+                color: Color.fromARGB(255, 154, 235, 56),
+              ),
+              SizedBox(width: 10),
               Text(
                 "20-30 mins",
                 style: TextStyle(
@@ -220,6 +231,54 @@ class Homepage1 extends StatelessWidget {
               ),
             ],
           ),
+          Divider(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.star,
+                color: Colors.red,
+              ),
+              SizedBox(width: 5),
+              Text(
+                "4.7",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(width: 5),
+              Text(
+                "(123+)",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(width: 9),
+              Text(
+                "See Review",
+                style: TextStyle(
+                  color: Color.fromARGB(255, 235, 125, 56),
+                  fontSize: 18,
+                ),
+              ),
+            ],
+          ),
+          Divider(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 10.0),
+                child: Text(
+                  "Featured Items",
+                  style: GoogleFonts.acme(
+                    color: Colors.white,
+                    fontSize: 29,
+                  ),
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );
