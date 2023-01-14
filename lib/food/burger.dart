@@ -125,7 +125,7 @@ class Burger extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Fastfood(),
+                        builder: (context) => Homepage1(),
                       ),
                     );
                   }),
@@ -150,14 +150,7 @@ class Burger extends StatelessWidget {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: (() {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Homepage1(),
-                      ),
-                    );
-                  }),
+                  onPressed: (() {}),
                   style: ElevatedButton.styleFrom(
                     primary: Color.fromARGB(255, 154, 235, 56),
                     shadowColor: Colors.white,

@@ -175,14 +175,7 @@ class Fastfood extends StatelessWidget {
                   ),
                 ),
                 ElevatedButton(
-                    onPressed: (() {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Fastfood(),
-                        ),
-                      );
-                    }),
+                    onPressed: (() {}),
                     style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(255, 154, 235, 56),
                       shadowColor: Colors.white,

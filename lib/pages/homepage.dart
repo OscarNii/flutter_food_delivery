@@ -122,14 +122,7 @@ class Homepage1 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 ElevatedButton(
-                  onPressed: (() {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Homepage1(),
-                      ),
-                    );
-                  }),
+                  onPressed: (() {}),
                   style: ElevatedButton.styleFrom(
                     primary: Color.fromARGB(255, 154, 235, 56),
                     shadowColor: Colors.white,
