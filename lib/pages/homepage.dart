@@ -290,7 +290,7 @@ class Homepage1 extends StatelessWidget {
                     width: 350,
                     height: 350,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(112, 150, 147, 147),
+                      color: Color.fromARGB(39, 154, 235, 56),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(children: [
@@ -305,15 +305,21 @@ class Homepage1 extends StatelessWidget {
                         ),
                       ),
                       Divider(),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 70.0),
-                        child: Text(
-                          "Hawaiian Chicken Pizza",
-                          style: GoogleFonts.acme(
-                            color: Colors.white,
-                            fontSize: 26,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text(
+                            "Hawaiian Chicken Pizza",
+                            style: GoogleFonts.acme(
+                              color: Colors.white,
+                              fontSize: 29,
+                            ),
                           ),
-                        ),
+                          Icon(
+                            Icons.favorite_rounded,
+                            color: Color.fromARGB(255, 154, 235, 56),
+                          )
+                        ],
                       ),
                       SizedBox(height: 7),
                       Padding(
@@ -409,6 +415,81 @@ class Homepage1 extends StatelessWidget {
                     ]),
                   ),
                 ],
+              ),
+            ),
+            Divider(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    "All",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: Size(50, 40),
+                    primary: Color.fromARGB(255, 154, 235, 56),
+                    shape: StadiumBorder(),
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Combo",
+                    style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.black,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: Size(100, 40),
+                    primary: Color.fromARGB(255, 154, 235, 56),
+                    shape: StadiumBorder(),
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Premium",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.black,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: Size(100, 40),
+                    primary: Color.fromARGB(255, 154, 235, 56),
+                    shape: StadiumBorder(),
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Ingredients ",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: Size(150, 40),
+                    primary: Color.fromARGB(255, 154, 235, 56),
+                    shape: StadiumBorder(),
+                  ),
+                ),
+              ],
+            ),
+            Divider(),
+            Container(
+              width: 300,
+              height: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(14),
+                color: Colors.white,
               ),
             ),
           ],
