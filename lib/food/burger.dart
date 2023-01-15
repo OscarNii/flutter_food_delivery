@@ -264,7 +264,7 @@ class Burger extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 10.0),
                   child: Text(
-                    "Featured Items",
+                    "Featured Delicious Meal",
                     style: GoogleFonts.acme(
                       color: Colors.white,
                       fontSize: 29,
@@ -282,7 +282,7 @@ class Burger extends StatelessWidget {
                     width: 350,
                     height: 350,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(39, 154, 235, 56),
+                      color: Color.fromARGB(79, 154, 235, 56),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(children: [
@@ -310,7 +310,7 @@ class Burger extends StatelessWidget {
                           ),
                           Icon(
                             Icons.favorite_rounded,
-                            color: Color.fromARGB(255, 154, 235, 56),
+                            color: Colors.red,
                           )
                         ],
                       ),
@@ -348,18 +348,31 @@ class Burger extends StatelessWidget {
                         ),
                       ),
                       Divider(),
-                      Text(
-                        "Hawaiian Chicken Pizza",
-                        style: GoogleFonts.acme(
-                          color: Colors.white,
-                          fontSize: 26,
-                        ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text(
+                            "Iraq  Stylish  Burger",
+                            style: GoogleFonts.acme(
+                              color: Colors.white,
+                              fontSize: 29,
+                            ),
+                          ),
+                          Icon(
+                            Icons.favorite_rounded,
+                            color: Colors.red,
+                          )
+                        ],
                       ),
-                      Text(
-                        "Hawaiian Chicken Pizza",
-                        style: GoogleFonts.acme(
-                          color: Colors.white,
-                          fontSize: 20,
+                      SizedBox(height: 7),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 60.0),
+                        child: Text(
+                          "Sausage, Mushroom, Cheese and code",
+                          style: GoogleFonts.abel(
+                            color: Colors.white,
+                            fontSize: 17,
+                          ),
                         ),
                       ),
                     ]),
@@ -369,7 +382,7 @@ class Burger extends StatelessWidget {
                     width: 350,
                     height: 350,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(112, 150, 147, 147),
+                      color: Color.fromARGB(79, 154, 235, 56),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(children: [
@@ -385,15 +398,21 @@ class Burger extends StatelessWidget {
                         ),
                       ),
                       Divider(),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 70.0),
-                        child: Text(
-                          "Hawaiian Chicken Pizza",
-                          style: GoogleFonts.acme(
-                            color: Colors.white,
-                            fontSize: 26,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text(
+                            "Iraq  Stylish  Burger",
+                            style: GoogleFonts.acme(
+                              color: Colors.white,
+                              fontSize: 29,
+                            ),
                           ),
-                        ),
+                          Icon(
+                            Icons.favorite_rounded,
+                            color: Colors.red,
+                          )
+                        ],
                       ),
                       SizedBox(height: 7),
                       Padding(
