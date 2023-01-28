@@ -142,7 +142,7 @@ class Fastfood extends StatelessWidget {
                     child: Center(
                       child: Text("Pizza",
                           style: GoogleFonts.acme(
-                            fontSize: 23,
+                            fontSize: 19,
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           )),
@@ -168,7 +168,7 @@ class Fastfood extends StatelessWidget {
                   child: Center(
                     child: Text("BURGER",
                         style: GoogleFonts.acme(
-                          fontSize: 21,
+                          fontSize: 17,
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                         )),
@@ -189,7 +189,7 @@ class Fastfood extends StatelessWidget {
                         child: Center(
                           child: Text("FAST FOOD",
                               style: GoogleFonts.acme(
-                                fontSize: 19,
+                                fontSize: 15,
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
                               )),
@@ -388,7 +388,7 @@ class Fastfood extends StatelessWidget {
                           "Hawaiian Chicken Pizza",
                           style: GoogleFonts.acme(
                             color: Colors.white,
-                            fontSize: 26,
+                            fontSize: 16,
                           ),
                         ),
                       ),

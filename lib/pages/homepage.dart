@@ -136,7 +136,7 @@ class Homepage1 extends StatelessWidget {
                     child: Center(
                       child: Text("Pizza",
                           style: GoogleFonts.acme(
-                            fontSize: 23,
+                            fontSize: 19,
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           )),
@@ -162,7 +162,7 @@ class Homepage1 extends StatelessWidget {
                   child: Center(
                     child: Text("BURGER",
                         style: GoogleFonts.acme(
-                          fontSize: 21,
+                          fontSize: 17,
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                         )),
@@ -190,7 +190,7 @@ class Homepage1 extends StatelessWidget {
                         child: Center(
                           child: Text("FAST FOOD",
                               style: GoogleFonts.acme(
-                                fontSize: 19,
+                                fontSize: 15,
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
                               )),
