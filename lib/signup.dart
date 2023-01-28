@@ -22,7 +22,7 @@ class Signup extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 100.0),
                   child: Text(
                     "Welcome",
-                    style: GoogleFonts.acme(
+                    style: GoogleFonts.bentham(
                         fontSize: 90,
                         color: Colors.white,
                         fontWeight: FontWeight.bold),

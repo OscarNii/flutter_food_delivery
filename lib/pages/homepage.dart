@@ -411,70 +411,76 @@ class Homepage1 extends StatelessWidget {
               ),
             ),
             Divider(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    "All",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.black,
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      "All",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      fixedSize: Size(50, 40),
+                      primary: Color.fromARGB(255, 154, 235, 56),
+                      shape: StadiumBorder(),
                     ),
                   ),
-                  style: ElevatedButton.styleFrom(
-                    fixedSize: Size(50, 40),
-                    primary: Color.fromARGB(255, 154, 235, 56),
-                    shape: StadiumBorder(),
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    "Combo",
-                    style: TextStyle(
-                      fontSize: 19,
-                      color: Colors.black,
+                  Divider(),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Combo",
+                      style: TextStyle(
+                        fontSize: 19,
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      fixedSize: Size(100, 40),
+                      primary: Color.fromARGB(255, 154, 235, 56),
+                      shape: StadiumBorder(),
                     ),
                   ),
-                  style: ElevatedButton.styleFrom(
-                    fixedSize: Size(100, 40),
-                    primary: Color.fromARGB(255, 154, 235, 56),
-                    shape: StadiumBorder(),
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    "Premium",
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.black,
+                  Divider(),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Premium",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      fixedSize: Size(100, 40),
+                      primary: Color.fromARGB(255, 154, 235, 56),
+                      shape: StadiumBorder(),
                     ),
                   ),
-                  style: ElevatedButton.styleFrom(
-                    fixedSize: Size(100, 40),
-                    primary: Color.fromARGB(255, 154, 235, 56),
-                    shape: StadiumBorder(),
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    "Ingredients ",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.black,
+                  Divider(),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Ingredients ",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      fixedSize: Size(150, 40),
+                      primary: Color.fromARGB(255, 154, 235, 56),
+                      shape: StadiumBorder(),
                     ),
                   ),
-                  style: ElevatedButton.styleFrom(
-                    fixedSize: Size(150, 40),
-                    primary: Color.fromARGB(255, 154, 235, 56),
-                    shape: StadiumBorder(),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
             Divider(),
             Container(
