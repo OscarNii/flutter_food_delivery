@@ -1,87 +1,57 @@
-// ignore_for_file: sized_box_for_whitespace, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: sized_box_for_whitespace, deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'package:flutter_food_delivery/food/fastfood.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_food_delivery/pages/homepage.dart';
+import 'package:flutter_food_delivery/food/burger.dart';
+import 'package:flutter_food_delivery/food/fastfood1.dart';
 
-import '../food/burger.dart';
-
-class Homepage1 extends StatelessWidget {
-  const Homepage1({Key? key}) : super(key: key);
+class Fastfood1 extends StatelessWidget {
+  const Fastfood1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        actions: const [
+          Icon(
+            Icons.favorite,
+            color: Color.fromARGB(255, 154, 235, 56),
+          ),
+        ],
+        brightness: Brightness.light,
+        toolbarHeight: 170,
+        backgroundColor: Colors.transparent,
+        centerTitle: true,
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("asset/l-intro-1659106294.jpeg"),
+              fit: BoxFit.cover,
+              //colorFilter: ColorFilter.mode(
+              //Color.fromARGB(99, 0, 0, 0), BlendMode.darken),
+            ),
+          ),
+        ),
+        elevation: 10,
+      ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("asset/pizzy.png"),
+            image: AssetImage("asset/eiliv-aceron-uBigm8w_MpA-unsplash.jpg"),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
-                Color.fromARGB(197, 0, 0, 0), BlendMode.darken),
+                Color.fromARGB(185, 0, 0, 0), BlendMode.darken),
           ),
         ),
         child: SingleChildScrollView(
           child: Column(
             children: [
               Stack(
-                children: [
-                  SafeArea(
-                    child: Padding(
-                      padding: const EdgeInsets.only(bottom: 20.0),
-                      child: Container(
-                        width: 430,
-                        height: 200,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(30),
-                            image: DecorationImage(
-                              image: AssetImage("asset/mcdonaldsglobal-2.jpg"),
-                              fit: BoxFit.cover,
-                            )),
-                      ),
-                    ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 60.0, left: 10),
-                        child: Container(
-                          width: 40,
-                          height: 40,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color.fromARGB(255, 154, 235, 56),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 8.0),
-                            child: Icon(
-                              Icons.arrow_back_ios,
-                              color: Colors.black,
-                              size: 30,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 60.0, right: 10),
-                        child: Container(
-                          width: 40,
-                          height: 40,
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(10)),
-                          child: Icon(
-                            Icons.favorite,
-                            color: Colors.red,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                children: const [
                   Padding(
-                    padding: const EdgeInsets.only(
-                      top: 180,
+                    padding: EdgeInsets.only(
+                      top: 20,
                     ),
                     child: Center(
                       child: CircleAvatar(
@@ -89,7 +59,7 @@ class Homepage1 extends StatelessWidget {
                         radius: 80,
                         child: CircleAvatar(
                           radius: 75,
-                          backgroundImage: AssetImage("asset/pizzy.png"),
+                          backgroundImage: AssetImage("asset/79.jpeg"),
                         ),
                       ),
                     ),
@@ -100,46 +70,53 @@ class Homepage1 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Pizza",
+                    "Fastfood",
                     style: GoogleFonts.acme(
                       fontSize: 50,
-                      color: Color.fromARGB(255, 154, 235, 56),
+                      color: const Color.fromARGB(255, 154, 235, 56),
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 13.0),
                     child: Text(
-                      "  Restaurant",
+                      "  House",
                       style: GoogleFonts.acme(
                         fontSize: 30,
-                        color: Color.fromARGB(255, 235, 125, 56),
+                        color: const Color.fromARGB(255, 235, 125, 56),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                 ],
               ),
-              Text("Killers of your hunger",
+              const Text("Killers of your hunger",
                   style: TextStyle(
                     fontSize: 15,
                     color: Colors.white,
                   )),
-              Divider(),
+              const Divider(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   ElevatedButton(
-                    onPressed: (() {}),
+                    onPressed: (() {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Homepage1(),
+                        ),
+                      );
+                    }),
                     style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 154, 235, 56),
+                      primary: const Color.fromARGB(255, 154, 235, 56),
                       shadowColor: Colors.white,
                       onPrimary: Colors.green,
-                      fixedSize: Size(100, 40),
-                      shape: StadiumBorder(),
+                      fixedSize: const Size(100, 40),
+                      shape: const StadiumBorder(),
                     ),
                     child: Container(
-                      width: 90,
+                      width: 91,
                       height: 40,
                       child: Center(
                         child: Text("Pizza",
@@ -156,16 +133,16 @@ class Homepage1 extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Burger(),
+                          builder: (context) => const Fastfood1(),
                         ),
                       );
                     }),
                     style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 154, 235, 56),
+                      primary: const Color.fromARGB(255, 154, 235, 56),
                       shadowColor: Colors.white,
                       onPrimary: Colors.red,
-                      fixedSize: Size(130, 40),
-                      shape: StadiumBorder(),
+                      fixedSize: const Size(130, 40),
+                      shape: const StadiumBorder(),
                     ),
                     child: Center(
                       child: Text("BURGER",
@@ -177,20 +154,13 @@ class Homepage1 extends StatelessWidget {
                     ),
                   ),
                   ElevatedButton(
-                      onPressed: (() {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Fastfood(),
-                          ),
-                        );
-                      }),
+                      onPressed: (() {}),
                       style: ElevatedButton.styleFrom(
-                        foregroundColor: Colors.red,
-                        backgroundColor: Color.fromARGB(255, 154, 235, 56),
+                        primary: const Color.fromARGB(255, 154, 235, 56),
                         shadowColor: Colors.white,
-                        fixedSize: Size(130, 40),
-                        shape: StadiumBorder(),
+                        onPrimary: Colors.red,
+                        fixedSize: const Size(130, 40),
+                        shape: const StadiumBorder(),
                       ),
                       child: Container(
                           width: 90,
@@ -205,10 +175,10 @@ class Homepage1 extends StatelessWidget {
                           ))),
                 ],
               ),
-              Divider(),
+              const Divider(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Icon(
                     Icons.motorcycle,
                     color: Color.fromARGB(255, 154, 235, 56),
@@ -234,10 +204,10 @@ class Homepage1 extends StatelessWidget {
                   ),
                 ],
               ),
-              Divider(),
+              const Divider(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Icon(
                     Icons.star,
                     color: Colors.red,
@@ -266,11 +236,12 @@ class Homepage1 extends StatelessWidget {
                   ),
                 ],
               ),
-              Divider(),
+              const Divider(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Center(
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
                     child: Text(
                       "Featured Items",
                       style: GoogleFonts.acme(
@@ -281,7 +252,7 @@ class Homepage1 extends StatelessWidget {
                   ),
                 ],
               ),
-              Divider(),
+              const Divider(),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -290,7 +261,7 @@ class Homepage1 extends StatelessWidget {
                       width: 350,
                       height: 350,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(39, 154, 235, 56),
+                        color: const Color.fromARGB(39, 154, 235, 56),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Column(children: [
@@ -299,32 +270,31 @@ class Homepage1 extends StatelessWidget {
                           width: 350,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                                image: AssetImage("asset/187266.jpg"),
+                            image: const DecorationImage(
+                                image: AssetImage("asset/80.png"),
                                 fit: BoxFit.fill),
                           ),
                         ),
-                        Divider(),
+                        const Divider(),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Center(
-                              child: Text(
-                                "Hawaiian Chicken Pizza",
-                                style: GoogleFonts.acme(
-                                  color: Colors.white,
-                                  fontSize: 29,
-                                ),
+                            Text(
+                              "Hawaiian Chicken Pizza",
+                              style: GoogleFonts.acme(
+                                color: Colors.white,
+                                fontSize: 29,
                               ),
                             ),
-                            Icon(
+                            const Icon(
                               Icons.favorite_rounded,
-                              color: Color.fromARGB(255, 154, 235, 56),
+                              color: Colors.red,
                             )
                           ],
                         ),
-                        SizedBox(height: 7),
-                        Center(
+                        const SizedBox(height: 7),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 60.0),
                           child: Text(
                             "Sausage, Mushroom, Cheese and code",
                             style: GoogleFonts.abel(
@@ -335,12 +305,12 @@ class Homepage1 extends StatelessWidget {
                         ),
                       ]),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     Container(
                       width: 350,
                       height: 350,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(112, 150, 147, 147),
+                        color: const Color.fromARGB(39, 154, 235, 56),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Column(children: [
@@ -349,14 +319,14 @@ class Homepage1 extends StatelessWidget {
                           width: 350,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                                image: AssetImage("asset/deliciuos.jpg"),
+                            image: const DecorationImage(
+                                image: AssetImage("asset/84.jpeg"),
                                 fit: BoxFit.fill),
                           ),
                         ),
-                        Divider(),
+                        const Divider(),
                         Text(
-                          "Hawaiian Chicken Pizzy",
+                          "Hawaiian Chicken Pizza",
                           style: GoogleFonts.acme(
                             color: Colors.white,
                             fontSize: 26,
@@ -371,12 +341,12 @@ class Homepage1 extends StatelessWidget {
                         ),
                       ]),
                     ),
-                    SizedBox(width: 20),
+                    const SizedBox(width: 20),
                     Container(
                       width: 350,
                       height: 350,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(112, 150, 147, 147),
+                        color: const Color.fromARGB(39, 154, 235, 56),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Column(children: [
@@ -385,24 +355,25 @@ class Homepage1 extends StatelessWidget {
                           width: 350,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                                image: AssetImage(
-                                    "asset/peri-peri-barbecue-chicken-pizza-90806-1.jpeg"),
+                            image: const DecorationImage(
+                                image: AssetImage("asset/80.png"),
                                 fit: BoxFit.fill),
                           ),
                         ),
-                        Divider(),
-                        Center(
+                        const Divider(),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 70.0),
                           child: Text(
                             "Hawaiian Chicken Pizza",
                             style: GoogleFonts.acme(
                               color: Colors.white,
-                              fontSize: 26,
+                              fontSize: 16,
                             ),
                           ),
                         ),
-                        SizedBox(height: 7),
-                        Center(
+                        const SizedBox(height: 7),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 60.0),
                           child: Text(
                             "Sausage, Mushroom, Cheese and code",
                             style: GoogleFonts.abel(
@@ -416,7 +387,7 @@ class Homepage1 extends StatelessWidget {
                   ],
                 ),
               ),
-              Divider(),
+              const Divider(),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -424,7 +395,7 @@ class Homepage1 extends StatelessWidget {
                   children: [
                     ElevatedButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "All",
                         style: TextStyle(
                           fontSize: 20,
@@ -432,15 +403,15 @@ class Homepage1 extends StatelessWidget {
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
-                        fixedSize: Size(50, 40),
-                        backgroundColor: Color.fromARGB(255, 154, 235, 56),
-                        shape: StadiumBorder(),
+                        fixedSize: const Size(50, 40),
+                        primary: const Color.fromARGB(255, 154, 235, 56),
+                        shape: const StadiumBorder(),
                       ),
                     ),
-                    Divider(),
+                    const Divider(),
                     ElevatedButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "Combo",
                         style: TextStyle(
                           fontSize: 19,
@@ -448,15 +419,15 @@ class Homepage1 extends StatelessWidget {
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
-                        fixedSize: Size(100, 40),
-                        primary: Color.fromARGB(255, 154, 235, 56),
-                        shape: StadiumBorder(),
+                        fixedSize: const Size(100, 40),
+                        primary: const Color.fromARGB(255, 154, 235, 56),
+                        shape: const StadiumBorder(),
                       ),
                     ),
-                    Divider(),
+                    const Divider(),
                     ElevatedButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "Premium",
                         style: TextStyle(
                           fontSize: 15,
@@ -464,31 +435,47 @@ class Homepage1 extends StatelessWidget {
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
-                        fixedSize: Size(100, 40),
-                        primary: Color.fromARGB(255, 154, 235, 56),
-                        shape: StadiumBorder(),
+                        fixedSize: const Size(100, 40),
+                        primary: const Color.fromARGB(255, 154, 235, 56),
+                        shape: const StadiumBorder(),
                       ),
                     ),
-                    Divider(),
+                    const Divider(),
                     ElevatedButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         "Ingredients ",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 13,
                           color: Colors.black,
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
-                        fixedSize: Size(150, 40),
-                        primary: Color.fromARGB(255, 154, 235, 56),
-                        shape: StadiumBorder(),
+                        fixedSize: const Size(150, 40),
+                        primary: const Color.fromARGB(255, 154, 235, 56),
+                        shape: const StadiumBorder(),
+                      ),
+                    ),
+                    const Divider(),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text(
+                        "Mixes ",
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: Colors.black,
+                        ),
+                      ),
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(150, 40),
+                        primary: const Color.fromARGB(255, 154, 235, 56),
+                        shape: const StadiumBorder(),
                       ),
                     ),
                   ],
                 ),
               ),
-              Divider(),
+              const Divider(),
               Container(
                 width: 300,
                 height: 200,

@@ -1,7 +1,8 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:flutter_food_delivery/food/burger.dart';
+import 'package:flutter_food_delivery/food/fastfood1.dart';
 import 'package:flutter_food_delivery/pages/homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -145,7 +146,7 @@ class Fastfood extends StatelessWidget {
                       shape: StadiumBorder(),
                     ),
                     child: Container(
-                      width: 90,
+                      width: 91,
                       height: 40,
                       child: Center(
                         child: Text("Pizza",
@@ -162,7 +163,7 @@ class Fastfood extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Burger(),
+                          builder: (context) => Fastfood1(),
                         ),
                       );
                     }),
