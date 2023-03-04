@@ -1,6 +1,6 @@
 # flutter_food_delivery
 
-A new Flutter project.
+A new Flutter projects.
 
 ## Getting Started
 
