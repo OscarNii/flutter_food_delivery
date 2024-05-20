@@ -138,9 +138,8 @@ class Burger extends StatelessWidget {
                       );
                     }),
                     style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 154, 235, 56),
+                      foregroundColor: Colors.green, backgroundColor: Color.fromARGB(255, 154, 235, 56),
                       shadowColor: Colors.white,
-                      onPrimary: Colors.green,
                       fixedSize: Size(100, 40),
                       shape: StadiumBorder(),
                     ),
@@ -160,9 +159,8 @@ class Burger extends StatelessWidget {
                   ElevatedButton(
                     onPressed: (() {}),
                     style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 154, 235, 56),
+                      foregroundColor: Colors.red, backgroundColor: Color.fromARGB(255, 154, 235, 56),
                       shadowColor: Colors.white,
-                      onPrimary: Colors.red,
                       fixedSize: Size(130, 40),
                       shape: StadiumBorder(),
                     ),
@@ -185,9 +183,8 @@ class Burger extends StatelessWidget {
                         );
                       }),
                       style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 154, 235, 56),
+                        foregroundColor: Colors.red, backgroundColor: Color.fromARGB(255, 154, 235, 56),
                         shadowColor: Colors.white,
-                        onPrimary: Colors.red,
                         fixedSize: Size(130, 40),
                         shape: StadiumBorder(),
                       ),
@@ -446,6 +443,10 @@ class Burger extends StatelessWidget {
                   children: [
                     ElevatedButton(
                       onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        foregroundColor: Colors.black, fixedSize: Size(50, 40), backgroundColor: Color.fromARGB(255, 154, 235, 56),
+                        shape: StadiumBorder(),
+                      ),
                       child: Text(
                         "All",
                         style: TextStyle(
@@ -453,15 +454,13 @@ class Burger extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: Size(50, 40),
-                        primary: Color.fromARGB(255, 154, 235, 56),
-                        shape: StadiumBorder(),
-                        onPrimary: Colors.black,
-                      ),
                     ),
                     ElevatedButton(
                       onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: Size(100, 40), backgroundColor: Color.fromARGB(255, 154, 235, 56),
+                        shape: StadiumBorder(),
+                      ),
                       child: Text(
                         "Combo",
                         style: TextStyle(
@@ -469,14 +468,13 @@ class Burger extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: Size(100, 40),
-                        primary: Color.fromARGB(255, 154, 235, 56),
-                        shape: StadiumBorder(),
-                      ),
                     ),
                     ElevatedButton(
                       onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: Size(100, 40), backgroundColor: Color.fromARGB(255, 154, 235, 56),
+                        shape: StadiumBorder(),
+                      ),
                       child: Text(
                         "Premium",
                         style: TextStyle(
@@ -484,25 +482,19 @@ class Burger extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: Size(100, 40),
-                        primary: Color.fromARGB(255, 154, 235, 56),
-                        shape: StadiumBorder(),
-                      ),
                     ),
                     ElevatedButton(
                       onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: Size(150, 40), backgroundColor: Color.fromARGB(255, 154, 235, 56),
+                        shape: StadiumBorder(),
+                      ),
                       child: Text(
                         "Ingredients ",
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.black,
                         ),
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: Size(150, 40),
-                        primary: Color.fromARGB(255, 154, 235, 56),
-                        shape: StadiumBorder(),
                       ),
                     ),
                   ],

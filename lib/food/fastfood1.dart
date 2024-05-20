@@ -3,8 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_food_delivery/pages/homepage.dart';
-import 'package:flutter_food_delivery/food/burger.dart';
-import 'package:flutter_food_delivery/food/fastfood1.dart';
 
 class Fastfood1 extends StatelessWidget {
   const Fastfood1({Key? key}) : super(key: key);
@@ -19,7 +17,6 @@ class Fastfood1 extends StatelessWidget {
             color: Color.fromARGB(255, 154, 235, 56),
           ),
         ],
-        brightness: Brightness.light,
         toolbarHeight: 170,
         backgroundColor: Colors.transparent,
         centerTitle: true,
@@ -109,9 +106,8 @@ class Fastfood1 extends StatelessWidget {
                       );
                     }),
                     style: ElevatedButton.styleFrom(
-                      primary: const Color.fromARGB(255, 154, 235, 56),
+                      foregroundColor: Colors.green, backgroundColor: const Color.fromARGB(255, 154, 235, 56),
                       shadowColor: Colors.white,
-                      onPrimary: Colors.green,
                       fixedSize: const Size(100, 40),
                       shape: const StadiumBorder(),
                     ),
@@ -138,9 +134,8 @@ class Fastfood1 extends StatelessWidget {
                       );
                     }),
                     style: ElevatedButton.styleFrom(
-                      primary: const Color.fromARGB(255, 154, 235, 56),
+                      foregroundColor: Colors.red, backgroundColor: const Color.fromARGB(255, 154, 235, 56),
                       shadowColor: Colors.white,
-                      onPrimary: Colors.red,
                       fixedSize: const Size(130, 40),
                       shape: const StadiumBorder(),
                     ),
@@ -156,9 +151,8 @@ class Fastfood1 extends StatelessWidget {
                   ElevatedButton(
                       onPressed: (() {}),
                       style: ElevatedButton.styleFrom(
-                        primary: const Color.fromARGB(255, 154, 235, 56),
+                        foregroundColor: Colors.red, backgroundColor: const Color.fromARGB(255, 154, 235, 56),
                         shadowColor: Colors.white,
-                        onPrimary: Colors.red,
                         fixedSize: const Size(130, 40),
                         shape: const StadiumBorder(),
                       ),
@@ -395,6 +389,10 @@ class Fastfood1 extends StatelessWidget {
                   children: [
                     ElevatedButton(
                       onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(50, 40), backgroundColor: const Color.fromARGB(255, 154, 235, 56),
+                        shape: const StadiumBorder(),
+                      ),
                       child: const Text(
                         "All",
                         style: TextStyle(
@@ -402,15 +400,14 @@ class Fastfood1 extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: const Size(50, 40),
-                        primary: const Color.fromARGB(255, 154, 235, 56),
-                        shape: const StadiumBorder(),
-                      ),
                     ),
                     const Divider(),
                     ElevatedButton(
                       onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(100, 40), backgroundColor: const Color.fromARGB(255, 154, 235, 56),
+                        shape: const StadiumBorder(),
+                      ),
                       child: const Text(
                         "Combo",
                         style: TextStyle(
@@ -418,15 +415,14 @@ class Fastfood1 extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: const Size(100, 40),
-                        primary: const Color.fromARGB(255, 154, 235, 56),
-                        shape: const StadiumBorder(),
-                      ),
                     ),
                     const Divider(),
                     ElevatedButton(
                       onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(100, 40), backgroundColor: const Color.fromARGB(255, 154, 235, 56),
+                        shape: const StadiumBorder(),
+                      ),
                       child: const Text(
                         "Premium",
                         style: TextStyle(
@@ -434,15 +430,14 @@ class Fastfood1 extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: const Size(100, 40),
-                        primary: const Color.fromARGB(255, 154, 235, 56),
-                        shape: const StadiumBorder(),
-                      ),
                     ),
                     const Divider(),
                     ElevatedButton(
                       onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(150, 40), backgroundColor: const Color.fromARGB(255, 154, 235, 56),
+                        shape: const StadiumBorder(),
+                      ),
                       child: const Text(
                         "Ingredients ",
                         style: TextStyle(
@@ -450,26 +445,20 @@ class Fastfood1 extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: const Size(150, 40),
-                        primary: const Color.fromARGB(255, 154, 235, 56),
-                        shape: const StadiumBorder(),
-                      ),
                     ),
                     const Divider(),
                     ElevatedButton(
                       onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: const Size(150, 40), backgroundColor: const Color.fromARGB(255, 154, 235, 56),
+                        shape: const StadiumBorder(),
+                      ),
                       child: const Text(
                         "Mixes ",
                         style: TextStyle(
                           fontSize: 13,
                           color: Colors.black,
                         ),
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: const Size(150, 40),
-                        primary: const Color.fromARGB(255, 154, 235, 56),
-                        shape: const StadiumBorder(),
                       ),
                     ),
                   ],

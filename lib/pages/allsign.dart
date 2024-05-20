@@ -54,11 +54,9 @@ class SignInPage extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.symmetric(horizontal: 10.0),
+                foregroundColor: Color.fromARGB(255, 0, 0, 0), padding: EdgeInsets.symmetric(horizontal: 10.0), backgroundColor: Color.fromARGB(255, 154, 235, 56),
                 fixedSize: Size(80, 40),
                 textStyle: TextStyle(fontSize: 18),
-                primary: Color.fromARGB(255, 154, 235, 56),
-                onPrimary: Color.fromARGB(255, 0, 0, 0),
                 shadowColor: Color.fromARGB(255, 255, 255, 255),
                 side: BorderSide(
                     color: Color.fromARGB(255, 255, 255, 255), width: 2),
